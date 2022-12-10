@@ -1,19 +1,14 @@
-import user from "../library/user.json"
+import users from "../library/users.json"
 import Profile from "./Profile/Profile";
+import "../index.css"
 
 
 export const App = (props) => {
   return (
-    <div>
-      < Profile
-        avatar={user.avatar}
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
+    <div className="profile-container">
+      {users.map(user =>
+        < Profile profile={user} key={ user.id } />
+      )}      
     </div>
   );
 };

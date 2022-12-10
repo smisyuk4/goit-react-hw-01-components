@@ -1,16 +1,63 @@
- /* profile 
- description 
- avatar 
- name 
- tag 
- location 
- stats 
- label 
- quantity  */
-
 .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+
     width: 300px;
     border: 1px solid black;
     border-radius: 20px;
     background-color: aquamarine;
+}
+
+.avatar{
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.name {
+    margin-bottom: 10px;   
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    height: 65px;
+}
+
+.tag {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+}
+
+.location{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 80px;
+
+    color: white;
+    border-radius: 7px;
+    background-color: brown;
 }

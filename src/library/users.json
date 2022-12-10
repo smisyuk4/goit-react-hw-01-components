@@ -1,0 +1,38 @@
+[
+  {
+  "id": 1,
+  "username": "Jacques Gluke",
+  "tag": "jgluke",
+  "location": "Ocho Rios, Jamaica",
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 5603,
+    "views": 4827,
+    "likes": 1308
+    }
+  },
+    {
+  "id": 2,
+  "username": "Taras Boolba",
+  "tag": "ataman",
+  "location": "Zaporizska sich, Ukraina",
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 52000000,
+    "views": 480000,
+    "likes": 480000
+    }
+  },
+  {
+  "id": 3,
+  "username": "Michailo Kotsubunskiy",
+  "tag": "autor",
+  "location": "Vinnitsa, Ukraina",
+  "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  "stats": {
+    "followers": 52000000,
+    "views": 380000,
+    "likes": 380000
+    }
+  }
+]
