@@ -38,6 +38,7 @@ const TransactionItem = (props) => {
             break;
         case "deposit": style = "deposit";
             break;
+        default: style = "def"
     }
 
     return  <tr className={css.trow}>

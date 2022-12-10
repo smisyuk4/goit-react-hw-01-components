@@ -86,3 +86,7 @@ th, td {
 .type.deposit {
     color: rgb(155, 27, 138);
 }
+
+.type.def {
+    color: currentColor;
+}
