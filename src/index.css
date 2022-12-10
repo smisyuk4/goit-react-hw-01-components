@@ -14,29 +14,6 @@ code {
     monospace;
 }
 
-.profile-container{
-  display: grid;
-  justify-items: center;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;  
-}
-
-@media screen and (min-width: 960px) {
-  .profile-container {  
-      grid-template-columns: auto auto;
-      grid-template-rows: auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .profile-container {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-  }
-}
-
 img {
   display: block;
 }
@@ -47,7 +24,7 @@ ul {
   padding: 0;
 }
 
-p, img {
+h2, p, img {
     margin: 0;
     padding: 0;
 }

@@ -1,6 +1,15 @@
+import users from "library/users.json"
 import "./Profile.css"
-
 import PropTypes from "prop-types";
+
+
+const ClientList = () => {
+    return <section className="profile-container">
+        {users.map(user =>
+            < Profile profile={user} key={ user.id } />
+        )}
+    </section>
+}
 
 const Profile = (props) => {
     return <div className="profile" data-id={props.profile.id}>      
@@ -48,4 +57,4 @@ Profile.propTypes = {
     }).isRequired
 }
 
-export default Profile
+export default ClientList
