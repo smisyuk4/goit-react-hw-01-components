@@ -1,0 +1,16 @@
+ /* profile 
+ description 
+ avatar 
+ name 
+ tag 
+ location 
+ stats 
+ label 
+ quantity  */
+
+.profile {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
