@@ -1,12 +1,5 @@
-/* statistics
-title
-stat-list
-item
-label
-percentage */
-
 .statistics {
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
     background-color: pink;
 }
@@ -16,7 +9,7 @@ percentage */
     margin-bottom: 20px;
 }
 
-.stat-list {
+.list {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -39,7 +32,7 @@ percentage */
         width: 52px;
     }
 
-    .stat-list{
+    .list{
         gap: 20px;
     }
 }

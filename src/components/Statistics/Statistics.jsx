@@ -1,21 +1,21 @@
 import data from "library/data.json"
-import "./Statistics.css"
+import css from "./Statistics.module.css"
 import PropTypes from "prop-types";
 
 const Statistics = () => {
-    return <section className="statistics">
-                <h2 className="title">Upload stats</h2>
+    return <section className={css.statistics}>
+                <h2 className={css.title}>Upload stats</h2>
         
-                <ul className="stat-list">
+                <ul className={css.list}>
                     {data.map(item => <Stat stat={item} key={ item.id } />)}
                 </ul>
             </section>
 }
 
 const Stat = (props) => {
-    return  <li className="item" data-id={props.stat.id}>
-                <span className="label">{ props.stat.label } </span>
-                <span className="percentage">{ props.stat.percentage}%</span>
+    return  <li className={css.item} data-id={props.stat.id}>
+                <span className={css.label}>{ props.stat.label } </span>
+                <span className={css.percentage}>{ props.stat.percentage}%</span>
             </li>
 }
 

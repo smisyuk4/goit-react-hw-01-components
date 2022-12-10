@@ -1,10 +1,10 @@
 import users from "library/users.json"
-import "./Profile.css"
+import css from "./Profile.module.css"
 import PropTypes from "prop-types";
 
 
 const ClientList = () => {
-    return <section className="profile-container">
+    return <section className={ css.container}>
         {users.map(user =>
             < Profile profile={user} key={ user.id } />
         )}
@@ -12,31 +12,31 @@ const ClientList = () => {
 }
 
 const Profile = (props) => {
-    return <div className="profile" data-id={props.profile.id}>      
-                <div className="description">
+    return <div className={css.profile} data-id={props.profile.id}>      
+                <div className={css.description}>
                     <img
                     src={props.profile.avatar}
                     alt="User avatar"
-                    className="avatar"
+                    className={css.avatar}
                     width={300}
                     />
-                    <p className="name">{props.profile.username}</p>
-                    <p className="tag">#{props.profile.tag}</p>
-                    <p className="location">{props.profile.location}</p>
+                    <p className={css.name}>{props.profile.username}</p>
+                    <p className={css.tag}>#{props.profile.tag}</p>
+                    <p className={css.location}>{props.profile.location}</p>
                 </div>
 
-                <ul className="stats">
+                <ul className={css.stats}>
                     <li>
-                        <span className="label">Followers </span>
-                        <span className="quantity">{props.profile.stats.followers}</span>
+                        <span className={css.label}>Followers </span>
+                        <span className={css.quantity}>{props.profile.stats.followers}</span>
                     </li>
                     <li>
-                        <span className="label">Views </span>
-                        <span className="quantity">{props.profile.stats.views}</span>
+                        <span className={css.label}>Views </span>
+                        <span className={css.quantity}>{props.profile.stats.views}</span>
                     </li>
                     <li>
-                        <span className="label">Likes </span>
-                        <span className="quantity">{props.profile.stats.likes}</span>
+                        <span className={css.label}>Likes </span>
+                        <span className={css.quantity}>{props.profile.stats.likes}</span>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,69 @@
+[
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
+    "name": "Mango",
+    "isOnline": true,
+    "id": 1812
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png",
+    "name": "Kiwi",
+    "isOnline": false,
+    "id": 1137
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png",
+    "name": "Ajax",
+    "isOnline": true,
+    "id": 1213
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png",
+    "name": "Jay",
+    "isOnline": true,
+    "id": 1714
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png",
+    "name": "Poly",
+    "isOnline": false,
+    "id": 1284
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998761.png",
+    "name": "Marina",
+    "isOnline": false,
+    "id": 2258
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998763.png",
+    "name": "Oleg",
+    "isOnline": true,
+    "id": 4785
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998769.png",
+    "name": "Ganna",
+    "isOnline": false,
+    "id": 1896
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998767.png",
+    "name": "Nitita",
+    "isOnline": true,
+    "id": 1147
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998775.png",
+    "name": "Maria",
+    "isOnline": false,
+    "id": 1080
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998777.png",
+    "name": "Pavel",
+    "isOnline": true,
+    "id": 9635
+  }  
+]
+
