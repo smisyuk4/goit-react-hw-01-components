@@ -1,0 +1,88 @@
+.transaction{
+    padding: 20px 0;
+    text-align: center;
+    background-color: pink;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.history {
+    width: 320px;
+    margin: 0 auto;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+th, td {
+    width: 80px;
+}
+
+@media screen and (min-width: 480px) {
+    .history {
+        width: 450px;
+        font-size: 14px;
+    }
+    
+    th, td {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .history {
+        width: 700px;
+        font-size: 16px;
+    }
+
+    th,
+    td {
+        width: 120px;
+    }
+}
+
+.head {
+    background-color: rgb(102, 63, 70);
+    color: white;
+}
+
+.thead{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.trow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0;
+}
+
+.trow:nth-child(even) {
+    background-color: rgb(173, 163, 165);
+}
+
+.type {
+    font-weight: 500;
+}
+
+.type.invoice {
+    color: red;
+}
+
+.type.payment {
+    color: green;
+}
+
+.type.withdrawal {
+    color: blue;
+}
+
+.type.deposit {
+    color: rgb(155, 27, 138);
+}
