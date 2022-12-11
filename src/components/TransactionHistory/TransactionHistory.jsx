@@ -1,16 +1,14 @@
-import transactions from "library/transactions.json"
-import css from "./TransactionHistory.module.css"
 import PropTypes from "prop-types";
 import clsx from "clsx";
+import styles from "./TransactionHistory.module.css"
 
-
-const TransactionList = () => {
-    return <section className={css.transaction}>
-                <h2 className={css.title}>transaction</h2>
+const TransactionList = ({items}) => {
+    return <section className={styles.transaction}>
+                <h2 className={styles.title}>transaction</h2>
         
-                <table className={css.history}>
-                    <thead className={css.head}>
-                        <tr className={css.thead}>
+                <table className={styles.history}>
+                    <thead className={styles.head}>
+                        <tr className={styles.thead}>
                             <th>Type</th>
                             <th>Amount</th>
                             <th>Currency</th>
@@ -19,32 +17,34 @@ const TransactionList = () => {
 
                     <tbody>                       
                     {
-                        transactions.map(transaction =>
-                        <TransactionItem transaction={transaction} key={transaction.id} />
+                        items.map(item =>
+                        <TransactionItem transaction={item} key={item.id} />
                     )}
                     </tbody>                    
                 </table>
         </section>
 }
 
-const TransactionItem = (props) => {
-    let style
-    switch(props.transaction.type){
-        case "invoice": style = "invoice";
+const TransactionItem = ({ transaction }) => {
+    const { type, amount, currency } = transaction
+    
+    let option
+    switch(type){
+        case "invoice": option = "invoice";
             break;
-        case "payment": style = "payment";
+        case "payment": option = "payment";
             break;
-        case "withdrawal": style = "withdrawal";
+        case "withdrawal": option = "withdrawal";
             break;
-        case "deposit": style = "deposit";
+        case "deposit": option = "deposit";
             break;
-        default: style = "def"
+        default: option = "def"
     }
 
-    return  <tr className={css.trow}>
-                <td className={clsx(css.type, css[style])}>{ props.transaction.type}</td>
-                <td className={clsx(css.type, css[style])}>{ props.transaction.amount}</td>
-                <td className={clsx(css.type, css[style])}>{ props.transaction.currency}</td>
+    return  <tr className={styles.trow}>
+                <td className={clsx(styles.type, styles[option])}>{type}</td>
+                <td className={clsx(styles.type, styles[option])}>{amount}</td>
+                <td className={clsx(styles.type, styles[option])}>{currency}</td>
             </tr>
 }
 

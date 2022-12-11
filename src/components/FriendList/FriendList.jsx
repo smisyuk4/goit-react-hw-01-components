@@ -1,32 +1,32 @@
-import friends from "library/friends.json"
-import css from "./FriendList.module.css"
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
+import styles from "./FriendList.module.css"
 
-
-const FriendList = () => {
-    return <section className={css.friends}>
-                <h2 className={css.title}>friends</h2>
+const FriendList = ({items}) => {
+    return <section className={styles.friends}>
+                <h2 className={styles.title}>friends</h2>
         
-                <ul className={css.list}>
-                    {friends.map(friend => <FriendListItem friend={friend} key={ friend.id} />)}
+                <ul className={styles.list}>
+                    {items.map(item => <FriendListItem friend={item} key={ item.id} />)}
                 </ul>
             </section>
 }
 
-const FriendListItem = (props) => {
-    let style
-    if (props.friend.isOnline) {
-        style = 'status-isOnLine'
+const FriendListItem = ({friend}) => {
+    const { isOnline, avatar, name } = friend
+
+    let option
+    if (isOnline) {
+        option = 'status-isOnLine'
     } else {
-        style = 'status-isOffLine'
+        option = 'status-isOffLine'
     }
 
-    return <li className={css.item}>
-                <span className={css[style]}></span>
-                <div className={css.wrp}>
-                    <img className={css.avatar} src={ props.friend.avatar } alt="User avatar" width="48" />
+    return <li className={styles.item}>
+                <span className={styles[option]}></span>
+                <div className={styles.wrp}>
+                    <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
                 </div>                
-                <p className={css.name}>{ props.friend.name }</p>
+                <p className={styles.name}>{name}</p>
             </li>
 }
 
