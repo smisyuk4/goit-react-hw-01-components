@@ -20,6 +20,7 @@ const Stat = ({ stat }) => {
 }
 
 Stat.propTypes = {
+    title: PropTypes.string,
     stat: PropTypes.shape({
             id: PropTypes.string.isRequired,
             label: PropTypes.string.isRequired,
